@@ -4,7 +4,7 @@ curdir=`dirname $0`
 cd $curdir
 curdir=`pwd`
 
-APP_NAME=teacherfeed-1.0.jar
+APP_NAME=performance-1.0.jar
 MAIN_CLASS=org.springframework.boot.loader.JarLauncher
 APP_HOME=..
 
