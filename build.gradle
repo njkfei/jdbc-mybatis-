@@ -20,7 +20,7 @@ apply plugin: 'distribution'
 
 distributions {
     main {
-        baseName = 'teacherfeed'
+        baseName = 'performance'
         contents {
             from 'src/main/resources'
         }
@@ -31,7 +31,7 @@ distributions {
 
 jar {
     group = 'com.sanhao.tech'
-    baseName = 'teacherfeed'
+    baseName = 'performance'
     version =  '1.0'
     manifest {
         attributes 'mainClassName': 'com.sanhao.tech.teacherfeed.App'
@@ -62,7 +62,7 @@ install {
         // only necessary if artifact ID diverges from project name
         // the latter defaults to project directory name and can be
         // configured in settings.gradle
-        pom.artifactId = 'teacherfeed'
+        pom.artifactId = 'performance'
         // shouldn't be needed as this is the default anyway
         pom.packaging = 'jar'
 
@@ -78,7 +78,7 @@ task copy(type: Copy){
         into "$buildDir/assemble/$rootProject.name/"
     }
     copy {
-        from "$buildDir/libs/teacherfeed-1.0"
+        from "$buildDir/libs/performance-1.0.jar"
         into "$buildDir/assemble/$rootProject.name/lib"
     }
     copy {
